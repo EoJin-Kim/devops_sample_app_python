@@ -60,12 +60,6 @@ pipeline {
     }
     
     stage('============ Deploy workload ============') {
-      when { expression { return params.DEPLOY_WORKLOAD } }
-      steps{
-        echo "Deploy workload"
-      }
-    }
-    stage('============ Deploy workload ============') {
         when { expression { return params.DEPLOY_WORKLOAD } }
         agent { label 'deploy' }
         steps {
