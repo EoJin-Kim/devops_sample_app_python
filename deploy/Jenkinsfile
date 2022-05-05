@@ -8,7 +8,7 @@ pipeline {
     booleanParam(name : 'PUSH_DOCKER_IMAGE', defaultValue : true, description : 'PUSH_DOCKER_IMAGE')
     booleanParam(name : 'DEPLOY_WORKLOAD', defaultValue : true, description : 'DEPLOY_WORKLOAD')
     
-    string(name :"AWS_ACCOUNT_ID",defaultValue '815243883393',description : 'AWS_ACCOUNT_ID')
+    string(name :"AWS_ACCOUNT_ID",defaultValue : '815243883393',description : 'AWS_ACCOUNT_ID')
     string(name :"DOCKER_IMAGE_NAME",defaultValue 'demo',description : 'DOCKER_IMAGE_NAME')
     string(name :"DOCKER_TAG",defaultValue 'demo',description : 'DOCKER_TAG')
   }
